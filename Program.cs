@@ -6,7 +6,7 @@ namespace Projeto_Produtos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
