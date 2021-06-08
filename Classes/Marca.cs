@@ -28,7 +28,7 @@ namespace Projeto_Produtos.Classes
         public void Listar()
         {
             foreach(Marca m in Marcas){
-                Console.WriteLine(Marcas);
+                Console.WriteLine(m.Marcas);
             }
         }
     }
