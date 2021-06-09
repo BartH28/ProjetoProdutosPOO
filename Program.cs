@@ -1,4 +1,5 @@
 ﻿using System;
+using Projeto_Produtos.Classes;
 
 namespace Projeto_Produtos
 {
@@ -6,7 +7,7 @@ namespace Projeto_Produtos
     {
         static void Main(string[] args)
         {
-            
+            Login l = new Login();
         }
     }
 }

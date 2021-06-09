@@ -11,25 +11,38 @@ namespace Projeto_Produtos.Classes
         
         public DateTime DataCadastro;
         
-        List<Marca> Marcas = new List<Marca>();
+        public List<Marca> Marcas = new List<Marca>();
 
-        public string Cadastrar(Marca marca)
-        {
-            Marcas.Add(marca);
-            return $"A marca {marca} foi adcionada com sucesso";
+        public Marca(){
+            
+        }
+        public Marca(int _codigo){
+            Codigo = _codigo;
+        }
+        public Marca(int _codigo, string Nome){
+            Codigo = _codigo;
+            NomeMarca = Nome;
+            DataCadastro = DateTime.Now;
         }
 
-        public string Deletar(Marca marca)
+        public string Cadastrar(Marca Marca)
         {
-            Marcas.Remove(marca);
-            return $"A marca {marca} foi removida com sucesso";
+            Marcas.Add(Marca);
+            return $"A marca foi adcionada com sucesso";
         }
 
-        public void Listar()
+        public string Deletar(Marca Marca)
         {
-            foreach(Marca m in Marcas){
-                Console.WriteLine(m.Marcas);
-            }
+            Marcas.Remove(Marcas.Find(x => x.Codigo == Codigo));
+            return $"A marca foi removida com sucesso";
+        }
+
+        public List<Marca> Listar()
+        {
+            // foreach(Marca m in Marcas){
+            //     Console.WriteLine(m.Marcas);
+            // }
+            return Marcas;
         }
     }
 }

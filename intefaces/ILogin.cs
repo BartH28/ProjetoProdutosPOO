@@ -1,8 +1,11 @@
+using Projeto_Produtos.Classes;
+
 namespace Projeto_Produtos.intefaces
 {
     public interface ILogin
     {
-        void Login();
+        
         string Logar();
+        string Deslogar();
     }
 }
