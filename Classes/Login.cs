@@ -11,14 +11,14 @@ namespace Projeto_Produtos.Classes
         Marca Marcas = new Marca();
         Usuario u = new Usuario();
 
-        public string Deslogar()
+        public string Deslogar(Usuario u)
         {
             
             Logado = false;
             return "O usuario foi deslogado";
         }
 
-        public string Logar()
+        public string Logar(Usuario u)
         {
             do
             {
@@ -33,7 +33,7 @@ namespace Projeto_Produtos.Classes
                 else
                 {
                     // tirar logado true ,apenas para testes
-                    Logado = true;
+                    Logado = false;
                     Console.WriteLine("Este usuario nao existe");
                 }
             } while (Logado == false);
@@ -69,7 +69,7 @@ Precione qualquer botão para se cadastrar.
                 repetir = true;
                 Console.WriteLine("Agora Faça o login da sua conta\n ");
 
-                Console.WriteLine(Logar());
+                Console.WriteLine(Logar(CadastroU));
             do
             {
                 Console.WriteLine($@"
@@ -89,13 +89,14 @@ Sistema de Produtos
                         Console.WriteLine("Digite o nome do Produto: ");
                         string Pnome = Console.ReadLine();
                         Console.WriteLine("Escolha um preço para o Produto: ");
-                        string Ppreço = Console.ReadLine();
+                        float Ppreço = float.Parse(Console.ReadLine());
                         Console.WriteLine($"Escolha de Marca do Produto ({Pnome})");
                         Console.WriteLine($@"
 1 - Adicionar marca
 2 - Remover marca
 3 - Listar marcas                            
                             ");
+                        
                         string resp3 = Console.ReadLine();
                         
                         switch (resp3)
@@ -108,7 +109,8 @@ Sistema de Produtos
                                 Marca m = new Marca(Mcodigo, Mnome);
 
                                 Console.WriteLine(Marcas.Cadastrar(m));
-
+                                Produto prod = new Produto(Pcodigo, Pnome, Ppreço, m);
+                                Console.WriteLine(p.Cadastrar(prod));
                                 break;
                             case "2":
                                 Console.WriteLine("Digite o codigo da marca que deseja deletar: ");
@@ -123,7 +125,7 @@ Sistema de Produtos
                                 Console.WriteLine("Alternativa errada");
                                 break;
                         }
-
+                        
                         break;
                     case "2":
                         Console.WriteLine("Digite o codigo do produto que deseja deletar");
@@ -137,7 +139,7 @@ Sistema de Produtos
                         repetir = true;
                         break;
                     case "4":
-                        Console.WriteLine(Deslogar());
+                        Console.WriteLine(Deslogar(CadastroU));
                         repetir = false;
 
                         break;
@@ -154,4 +156,6 @@ Sistema de Produtos
 
 
 // erros a tentar corrigi:
-// erro do login 
+// erro da variavel cadastrarPor
+// mostrar marca na lista de produtos
+// Metodo deletar 

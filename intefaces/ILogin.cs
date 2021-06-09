@@ -5,7 +5,7 @@ namespace Projeto_Produtos.intefaces
     public interface ILogin
     {
         
-        string Logar();
-        string Deslogar();
+        string Logar(Usuario usuario);
+        string Deslogar(Usuario usuario);
     }
 }

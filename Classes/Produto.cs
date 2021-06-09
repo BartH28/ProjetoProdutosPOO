@@ -18,18 +18,20 @@ namespace Projeto_Produtos.Classes
         public Usuario CadastradoPor { get; set; }
 
         List<Produto> ListaDeProdutos = new List<Produto>();
-
+        Usuario u = new Usuario();
+        Marca m = new Marca();
         public Produto(){
             
         }
         public Produto(int _codigo){
             Codigo = _codigo;
         }
-        public Produto(int _codigo, string _nome, float _preço, Marca marca){
+        public Produto(int _codigo, string _nome, float _preço, Marca _marca){
             Codigo = _codigo;
             NomeProduto =  _nome;
             Preço = _preço;
-            
+            marca = _marca;
+            // CadastradoPor = u.Nome;
         }
 
         public string Cadastrar(Produto Produto)
@@ -46,6 +48,9 @@ namespace Projeto_Produtos.Classes
         }
         public List<Produto> Listar()
         {
+            foreach(Produto p in ListaDeProdutos){
+                Console.WriteLine($@"{p.NomeProduto} - {p.Preço:C2} - {m.NomeMarca}");
+            }
             return ListaDeProdutos;
         }
     }

@@ -7,7 +7,7 @@ namespace Projeto_Produtos.Classes
     public class Usuario : IUsuario
     {
         private int Codigo;
-        private string Nome;
+        public string Nome;
         public string Email;
         public string Senha;
         private DateTime DataCadastro;

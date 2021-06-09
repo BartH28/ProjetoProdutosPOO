@@ -39,9 +39,9 @@ namespace Projeto_Produtos.Classes
 
         public List<Marca> Listar()
         {
-            // foreach(Marca m in Marcas){
-            //     Console.WriteLine(m.Marcas);
-            // }
+            foreach(Marca m in Marcas){
+                Console.WriteLine(m.NomeMarca);
+            }
             return Marcas;
         }
     }
