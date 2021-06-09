@@ -15,11 +15,11 @@ namespace Projeto_Produtos.Classes
         private DateTime DataCadastro;
         
         public Marca marca;
-        public Usuario CadastradoPor { get; set; }
+        public Usuario CadastradoPor;
 
         List<Produto> ListaDeProdutos = new List<Produto>();
         Usuario u = new Usuario();
-        Marca m = new Marca();
+        
         public Produto(){
             
         }
@@ -31,7 +31,9 @@ namespace Projeto_Produtos.Classes
             NomeProduto =  _nome;
             Preço = _preço;
             marca = _marca;
-            // CadastradoPor = u.Nome;
+            DataCadastro = DateTime.Now;
+            
+            
         }
 
         public string Cadastrar(Produto Produto)
@@ -39,17 +41,15 @@ namespace Projeto_Produtos.Classes
             ListaDeProdutos.Add(Produto);
             return "Produto Cadastrado";
         }
-
-
-        public string Deletar(Produto Produto)
+        public string Deletar(Produto produto)
         {
-            ListaDeProdutos.Remove(ListaDeProdutos.Find(x => x.Codigo == Codigo));;
+            ListaDeProdutos.Remove(ListaDeProdutos.Find(x => x.Codigo == produto.Codigo));
             return "Produto Deletado com sucesso";
         }
         public List<Produto> Listar()
         {
             foreach(Produto p in ListaDeProdutos){
-                Console.WriteLine($@"{p.NomeProduto} - {p.Preço:C2} - {m.NomeMarca}");
+                Console.WriteLine($@"{p.NomeProduto} - {p.Preço:C2} - {p.marca.NomeMarca} - Cadastrado por {p.CadastradoPor.Nome} em {p.DataCadastro}");        
             }
             return ListaDeProdutos;
         }

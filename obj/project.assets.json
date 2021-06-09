@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\henri\\.nuget\\packages\\": {}
+    "C:\\Users\\dev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Back-end senai\\Projeto Produtos\\Projeto Produtos.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\a\\ProjetoProdutosPOO\\Projeto Produtos.csproj",
       "projectName": "Projeto Produtos",
-      "projectPath": "D:\\Back-end senai\\Projeto Produtos\\Projeto Produtos.csproj",
-      "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "D:\\Back-end senai\\Projeto Produtos\\obj\\",
+      "projectPath": "C:\\Users\\dev\\Desktop\\a\\ProjetoProdutosPOO\\Projeto Produtos.csproj",
+      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\a\\ProjetoProdutosPOO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

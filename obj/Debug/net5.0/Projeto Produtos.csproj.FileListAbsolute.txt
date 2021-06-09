@@ -14,3 +14,19 @@ D:\Back-end senai\Projeto Produtos\obj\Debug\net5.0\Projeto Produtos.dll
 D:\Back-end senai\Projeto Produtos\obj\Debug\net5.0\ref\Projeto Produtos.dll
 D:\Back-end senai\Projeto Produtos\obj\Debug\net5.0\Projeto Produtos.pdb
 D:\Back-end senai\Projeto Produtos\obj\Debug\net5.0\Projeto Produtos.genruntimeconfig.cache
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\Projeto Produtos.exe
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\Projeto Produtos.deps.json
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\Projeto Produtos.runtimeconfig.json
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\Projeto Produtos.runtimeconfig.dev.json
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\Projeto Produtos.dll
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\ref\Projeto Produtos.dll
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\bin\Debug\net5.0\Projeto Produtos.pdb
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.csprojAssemblyReference.cache
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.AssemblyInfoInputs.cache
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.AssemblyInfo.cs
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.csproj.CoreCompileInputs.cache
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.dll
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\ref\Projeto Produtos.dll
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.pdb
+C:\Users\dev\Desktop\a\ProjetoProdutosPOO\obj\Debug\net5.0\Projeto Produtos.genruntimeconfig.cache
